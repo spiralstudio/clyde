@@ -32,8 +32,6 @@ import java.util.Collections;
 import java.util.Map;
 import java.util.TreeSet;
 
-import proguard.annotation.Keep;
-
 import com.google.common.base.Objects;
 import com.google.common.collect.Maps;
 import com.google.common.collect.Sets;
@@ -224,7 +222,6 @@ public class ModelConfig extends ParameterizedConfig
             /**
              * Returns the options available for the texture field.
              */
-            @Keep
             public String[] getTextureOptions ()
             {
                 TreeSet<String> textures = new TreeSet<String>();

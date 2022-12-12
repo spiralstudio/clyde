@@ -38,8 +38,6 @@ import java.util.Set;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Sets;
 
-import proguard.annotation.Keep;
-
 import com.samskivert.util.ArrayUtil;
 import com.samskivert.util.ListUtil;
 
@@ -284,7 +282,6 @@ public abstract class Parameter extends DeepObject
         /**
          * Returns the names of the options available for selection.
          */
-        @Keep
         public String[] getChoiceOptions ()
         {
             String[] names = new String[options.length];

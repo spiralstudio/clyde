@@ -80,11 +80,6 @@ import javax.swing.undo.UndoableEditSupport;
 
 import org.lwjgl.opengl.GL11;
 
-import com.apple.eawt.Application;
-import com.apple.eawt.AppEvent;
-import com.apple.eawt.QuitHandler;
-import com.apple.eawt.QuitResponse;
-
 import com.google.common.base.Function;
 import com.google.common.base.Joiner;
 import com.google.common.base.Predicate;
@@ -347,7 +342,7 @@ public class SceneEditor extends TudeyTool
      */
     protected void setupMacSupport ()
     {
-        Application app = Application.getApplication();
+        /*Application app = Application.getApplication();
         if (app == null) {
             return;
         }
@@ -362,7 +357,7 @@ public class SceneEditor extends TudeyTool
                 resp.cancelQuit();
                 shutdown();
             }
-        });
+        });*/
     }
 
     /**
