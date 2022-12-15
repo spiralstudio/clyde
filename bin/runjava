@@ -82,5 +82,5 @@ for ($i = 0; $i < @ARGV; $i++) {
 print `echo $$ > $pid_file` if (defined $pid_file);
 
 my $cmd = "java -mx256M $classpath $rootarg " . join(" ", @ARGV);
-# print "$cmd\n";
+print "$cmd\n";
 exec($cmd);

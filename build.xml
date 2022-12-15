@@ -72,7 +72,7 @@
     </copy>
     <javac srcdir="${src.dir}" destdir="${classes.dir}" includeAntRuntime="false"
            debug="on" optimize="${build.optimize}" deprecation="on"
-           source="1.6" target="1.6">
+           source="1.8" target="1.8">
       <classpath refid="classpath"/>
       <compilerarg value="-Xlint"/>
       <compilerarg value="-Xlint:-serial"/>
@@ -81,7 +81,7 @@
     <mkdir dir="${tclasses.dir}"/>
     <copy todir="${tclasses.dir}"><fileset dir="core/src/test/resources" includes="**"/></copy>
     <javac srcdir="${tsrc.dir}" destdir="${tclasses.dir}" includeAntRuntime="false"
-           debug="on" optimize="${build.optimize}" source="1.6" target="1.6"
+           debug="on" optimize="${build.optimize}" source="1.8" target="1.8"
            encoding="utf-8" classpathref="test.classpath">
       <compilerarg value="-Xlint"/>
       <compilerarg value="-Xlint:-serial"/>
@@ -146,7 +146,7 @@
     <!-- make sure the dobject class files are all compiled -->
     <javac srcdir="${src.dir}" destdir="${classes.dir}" includeAntRuntime="false"
            debug="on" optimize="${build.optimize}" deprecation="on"
-           source="1.6" target="1.6">
+           source="1.8" target="1.8">
       <classpath refid="classpath"/>
       <include name="**/*Object.java"/>
     </javac>
@@ -161,7 +161,7 @@
     <!-- make sure the service class files are all compiled -->
     <javac srcdir="${src.dir}" destdir="${classes.dir}" includeAntRuntime="false"
            debug="on" optimize="${build.optimize}" deprecation="on"
-           source="1.6" target="1.6">
+           source="1.8" target="1.8">
       <classpath refid="classpath"/>
       <include name="**/*Service.java"/>
     </javac>
