@@ -1,7 +1,29 @@
-/dist/
-/target/
+target/
+!.mvn/wrapper/maven-wrapper.jar
+
+### STS ###
+.apt_generated
 .classpath
-.settings
+.factorypath
 .project
-*.swp
-code
+.settings
+.springBeans
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+nbproject/private/
+nbbuild/
+nbdist/
+.nb-gradle/
+
+### Custom ###
+.DS_Store
+node_modules/
+logs/
+*.log
+dist/
