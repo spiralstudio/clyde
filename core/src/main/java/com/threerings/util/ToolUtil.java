@@ -105,7 +105,9 @@ public class ToolUtil
     public void init (ResourceManager rsrcmgr)
     {
       _rsrcmgr = rsrcmgr;
-      String dstr = ResourceUtil.getPreferredResourceDir();
+      // TODO
+      //String dstr = ResourceUtil.getPreferredResourceDir();
+      String dstr = null;
       _resourceDir = (dstr == null) ? null : new File(dstr);
       _rsrcmgr.initResourceDir(dstr);
     }
